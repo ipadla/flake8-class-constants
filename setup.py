@@ -1,3 +1,4 @@
+from pathlib import Path
 import setuptools
 
 
@@ -13,12 +14,16 @@ requires = [
 ]
 
 flake8_entry_point = 'flake8.extension'
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="flake8_class_constants",
     license="MIT",
     version=get_version(),
     description="Check PEP-8 class constants naming conventions, plugin for flake8",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author="Roman Korneev",
     author_email="rm@ipadla.org",
     url="https://github.com/ipadla/flake8-class-constants",
