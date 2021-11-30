@@ -1,0 +1,5 @@
+include setup.py
+include *.cfg
+include *.rst
+include LICENSE
+include source/*
