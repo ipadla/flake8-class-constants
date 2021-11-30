@@ -2,7 +2,7 @@
 """Checker of PEP-8 Class Constant Naming Conventions."""
 import ast
 
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 
 
 class ConstantNameChecker(ast.NodeVisitor):
