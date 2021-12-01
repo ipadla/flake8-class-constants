@@ -38,7 +38,6 @@ class ConstantChecker(object):
     version = __version__  # noqa: CCN101
 
     def __init__(self, tree, filename: str):
-        print(type(tree))
         self.tree = tree
         self.filename = filename
 
